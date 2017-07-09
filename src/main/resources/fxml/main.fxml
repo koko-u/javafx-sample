@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="jp.co.kokou.sample.controller.Controller">
+
+    <stylesheets>
+        <URL value="@/css/main.css"/>
+    </stylesheets>
+
+    <top>
+        <Label fx:id="messageLabel" text="This is FXML!"/>
+    </top>
+    <center>
+        <TextField fx:id="inputField"/>
+    </center>
+    <bottom>
+        <Button fx:id="okButton" onAction="#clickOk" text="Click"/>
+    </bottom>
+</BorderPane>
